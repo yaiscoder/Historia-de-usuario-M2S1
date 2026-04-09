@@ -1,31 +1,181 @@
+/* Pagina principal*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #d8e0c7;
+    display: flex;
+    flex-direction: column;
+}
+
+#encabezado{
+    background-color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 25px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;      
+    display: flex;       
+    justify-content: center;
+    padding: 0;
+}
+
+#enlace a{
+    background-color: #444f2c;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+#enlace a:hover{
+    background-color: #6e7d4e;
+}
+
+main{
+    display: flex;
+    justify-content: center; 
+    gap: 20px;                    
+    flex-wrap: wrap
+}
+
+#sobremi{
+    background-color: #6e7d4e;
+    border: 4px solid #444f2c;
+    text-align: center;
+    margin: 5px;
+}
+
+#proyectos{
+    background-color: #6e7d4e;
+    border: 4px solid #444f2c;
+    text-align: center;
+    margin: 5px;
+}
+
+#contacto{
+    background-color: #6e7d4e;
+    border: 4px solid #444f2c;
+    text-align: center;
+    margin: 5px;
+}
+
+section h2{
+    background-color: #d8e0c7;
+    border-radius: 4px;
+    margin: 5px;
+
+}
+
+p{
+    background-color: #dee2d5;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#principal section{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+#proyectos ul{
+    list-style: none;      
+    display: flex;       
+    justify-content: center;
+    padding: 0;
+}
+
+#project a{
+    background-color: #dee2d5;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 30px;
+    
+}
+
+
+/* Pagina de mascotas */
+
+#cuerpo {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #d8e0c7;
+}
 
 #regresar{
     background-color: #6e7d4e;
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    padding: 5px
+    padding: 5px;
+    margin-left: 15px;
 }
+
+#tarjetas{
+    display: flex;
+    justify-content: center; 
+    gap: 20px;                    
+    flex-wrap: wrap
+}
+
 #titulo-mascota{
-    background-color: #d8e0c7;
+    background-color: #fff;
     font-size: 30px;
     text-align: center;
-    
+    padding: 1px;   
 }
 
 .card-mascotas{
-    background-color: #f0c48c;
+    background-color: #6e7d4e;
     width: 500px;
-    border: 1px solid #aa7229;
+    border: 2px solid #444f2c;
     border-radius: 10px;
     padding: 20px;
     margin: 30px;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
+.card-mascotas img{
+    width: 500px;
+    height: 300px;
+}
+
+.card-mascotas:hover{
+    transition: 0,1s;
+    transform: translateY(-10);
+    box-shadow: 0 8px 20px gray;
+
 }
 
 .nombre-mascota{
-    background-color: #aa7229;
+    background-color: #d8e0c7;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     
+}
+
+#pie-pagina{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    height: 100px;
+    background-color: #fff;
+    flex-grow: 5;
+}
+
+.descripcion-mascota{
+    background-color: #d8e0c7;
+    padding: 5px;
+    text-align: center;
 }
