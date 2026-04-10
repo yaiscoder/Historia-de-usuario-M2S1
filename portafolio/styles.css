@@ -69,6 +69,11 @@ main{
     margin: 5px;
 }
 
+textarea{
+    resize: none
+    
+}
+
 section h2{
     background-color: #d8e0c7;
     border-radius: 4px;
