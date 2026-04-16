@@ -1,8 +1,288 @@
+/* Pagina principal*/
 
+#cuerpo1{
+    margin: 0;
+    background-color: #d0ddb4;
+    display: flex;
+    flex-direction: column;
+    font-family: "Sour Gummy", sans-serif;
+}
 
+#header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 30px rgb(204, 202, 202);
+    position: sticky;
+    top: 0;
+}
 
-/* Pagina de mascotas */
+/* Titulo con mi nombre */
 
+#encabezado{  
+    font-size: 30px;
+    padding: 25px;
+    margin: 0;
+    color: #444f2c;
+}
+
+/* Botones de navegación */
+
+nav ul {
+    list-style: none;      
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#enlace a{
+    background-color: #444f2c;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+#enlace a:hover{
+    background-color: #99a57e;
+} 
+
+.principal{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    gap: 20px;                    
+}
+
+/* Apartado sobre mi */
+
+#sobremi{
+    width: 100%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#sobremi h2{
+    margin-top: 30%;
+    margin-left: 30%;
+    font-size: 50px;
+    color: #444f2c;
+}
+
+#sobremi p{
+    margin: 20%;
+    padding: 5%;
+    font-size: x-large;
+    background-color: #444f2c;
+    border-radius: 200px;
+    text-align: center;
+    color: #e7e0e0;
+}
+
+/* Apartados de proyectos */
+
+#proyectos{
+    width: 100%;
+    margin-top: 0;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ul titulo";
+}
+
+#proyectos h2{
+    margin: 30%;
+    font-size: 50px;
+    grid-area: titulo;
+    color: #444f2c;
+}
+
+#proyectos ul{
+    list-style: none;      
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0;       
+    justify-content: center;
+    padding: 0;
+    margin-top: 15%;
+    grid-area: ul;
+}
+
+#project a{
+    background-color: #444f2c;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 30px;
+    margin: 30px;
+    font-size: 30px;
+}
+
+#project a:hover{
+    background-color: #dee2d5;
+    color: #000000;
+}
+
+/* Apartado de contacto */
+
+#contacto{
+    width: 100%;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contacto h2{
+    margin: 30%;
+    font-size: 50px;
+    color: #444f2c;
+}
+
+#contacto form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-right: 90px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    text-align: center;
+}
+
+label{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 7%;
+}
+
+textarea{
+    resize: vertical;
+}
+
+button{
+    margin-right: 10%;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #444f2c;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+#pie{
+    width: 100%;
+    padding: 15px;
+    height: 80px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 30px rgb(148, 145, 145);
+}
+
+#copy{
+    background-color: #ffffff;
+    margin-left: 45%;
+    color: #444f2c;
+}
+
+/* Pagina mascota */
+
+#cuerpo2{
+  margin: 0;
+  background-color: #d0ddb4;
+  font-family: "Sour Gummy", sans-serif;
+
+}
+
+#header2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 30px rgb(204, 202, 202);
+    position: sticky;
+    top: 0;
+}
+
+#header2 h1{
+    margin-left: 10px;
+    color: #444f2c;
+}
+
+/* Tarjetas/Card de las mascotas */
+
+#tarjeton{
+    display: flex;
+    justify-content: center;              
+    flex-wrap: wrap;    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;  
+}
+
+.card-mascota{
+    background-color: #f1f3eb;
+    width: 70%;
+    border: 2px solid #444f2c;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-left: 12%;
+}
+
+.img-mascota{
+    width: 300px;
+    height: 200px;
+}
+
+.card-mascota h2{
+    text-align: center;
+    font-size: 30px;
+    color: #444f2c;
+}
+
+.card-mascota:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px gray;
+
+}
+
+/* Pie de pagina/ footer */
+
+#pie-pagina{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    margin-top: 80px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 5px 30px rgb(148, 145, 145);
+}
+
+#copyr{
+    color: #444f2c;
+    margin-right: 45%;
+    background-color: #fff;
+}
+
+/* Botón de regreso */
 
 #regresar{
     background-color: #6e7d4e;
@@ -18,53 +298,29 @@
 }
 
 
+/* Botón para subir */
 
-
-.card-mascotas{
-    background-color: #6e7d4e;
-    width: 100%;
-    border: 2px solid #444f2c;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 30px;
-    cursor: pointer;
-    transition: 0.2s;
-}
-.card-mascotas img{
-    width: 100%;
-    height: auto;
+html {
+  scroll-behavior: smooth;
 }
 
-.card-mascotas:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px gray;
+.subir{
+    position: fixed;
+    bottom: 20px;   
+    right: 20px;     
+    z-index: 1000;   
 
-}
-
-.nombre-mascota{
-    background-color: #d8e0c7;
-    text-align: center;
-    font-size: 20px;
-    
-}
-
-#pie-pagina{
-    width: 100%;
+    /* Estilo de círculo */
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    height: 100px;
-    background-color: #fff;
-}
-
-.descripcion-mascota{
-    background-color: #d8e0c7;
-    padding: 5px;
-    text-align: center;
-}
-
-#copyr{
-    margin-right: 45%;
-    background-color: #fff;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    
+    background-color: #444f2c; 
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
