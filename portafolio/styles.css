@@ -1,26 +1,36 @@
-/* Pagina principal*/
+/* Pagina principal */
 
 body{
     margin: 0;
-    padding: 0;
-    background-color: #d8e0c7;
-    display: flex;
-    flex-direction: column;
+    background-color: #ffffff;
+    /* display: flex;
+    flex-direction: column; */
     font-family: "Sour Gummy", sans-serif;
 }
 
+#header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d0ddb4;
+    box-shadow: 0px 5px 30px rgb(204, 202, 202);
+}
+
+
 #encabezado{  
-    background-color: #fff;
     font-size: 30px;
     text-align: center;
     padding: 25px;
     margin: 0;
+    color: #d8e0c7;
 }
 
 nav ul {
     list-style: none;      
     display: flex;       
     justify-content: center;
+    align-items: center;
+    padding: 0;
     
 }
 
@@ -35,7 +45,7 @@ nav ul {
 
 #enlace a:hover{
     background-color: #6e7d4e;
-}
+} 
 
 main{
     display: flex;
@@ -50,6 +60,7 @@ main{
     text-align: center;
     margin: 5px;
     margin-top: 5%;
+    width: 500000px;
 }
 
 #sobremi p{
@@ -62,6 +73,7 @@ main{
     text-align: center;
     margin: 5px;
     margin-top: 5%;
+    width: 600%;
 }
 
 #contacto{
@@ -100,7 +112,10 @@ p{
 
 #proyectos ul{
     list-style: none;      
-    display: flex;       
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0;       
     justify-content: center;
     padding: 0;
     margin-top: 15%;
@@ -128,13 +143,14 @@ p{
     padding: 15px;
     height: 80px;
     margin-top: 30px;
-    background-color: #fff;
+    background-color: #d0ddb4;
 }
 
 #copy{
-    background-color: #fff;
+    background-color: #d0ddb4;
     margin-left: 45%;
 }
+
 
 /* Pagina de mascotas */
 
@@ -142,8 +158,16 @@ p{
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: #d8e0c7;
+  background-color: #ffffff;
   font-family: "Sour Gummy", sans-serif;
+}
+
+#header2{
+    display: flex;
+    justify-content: center;
+    background-color: #d0ddb4;
+    font-size: 150%;
+    box-shadow: 0px 5px 30px rgb(204, 202, 202);
 }
 
 #regresar{
@@ -171,24 +195,25 @@ p{
     font-size: 30px;
     text-align: center;
     padding: 1px;   
-}
+} 
+
 
 .card-mascotas{
     background-color: #6e7d4e;
-    width: 500px;
+    width: 100%;
     border: 2px solid #444f2c;
     border-radius: 10px;
     padding: 20px;
     margin: 30px;
     cursor: pointer;
+    transition: 0.2s;
 }
 .card-mascotas img{
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 
 .card-mascotas:hover{
-    transition: 0.2s;
     transform: translateY(-10px);
     box-shadow: 0 8px 20px gray;
 

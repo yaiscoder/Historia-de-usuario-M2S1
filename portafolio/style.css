@@ -1,0 +1,189 @@
+/* Pagina principal*/
+
+body{
+    margin: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+#header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d0ddb4;
+    box-shadow: 0px 5px 30px rgb(204, 202, 202);
+}
+
+/* Titulo con mi nombre */
+
+#encabezado{  
+    font-size: 30px;
+    padding: 25px;
+    margin: 0;
+    color: #444f2c;
+}
+
+/* Botones de navegación */
+
+nav ul {
+    list-style: none;      
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+#enlace a{
+    background-color: #444f2c;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+#enlace a:hover{
+    background-color: #6e7d4e;
+} 
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    gap: 20px;                    
+}
+
+/* Apartado sobre mi */
+
+#sobremi{
+    width: 100%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+#sobremi h2{
+    margin-top: 50%;
+    margin-left: 30%;
+    font-size: 50px;
+    color: #444f2c;
+}
+
+#sobremi p{
+    margin: 20%;
+    font-size: xx-large;
+    
+}
+
+/* Apartados de proyectos */
+
+#proyectos{
+    width: 100%;
+    margin-top: 0;
+    background-color: #afc187;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "ul titulo";
+}
+
+#proyectos h2{
+    margin: 30%;
+    font-size: 50px;
+    grid-area: titulo;
+    color: #fff;
+}
+
+#proyectos ul{
+    list-style: none;      
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0;       
+    justify-content: center;
+    padding: 0;
+    margin-top: 15%;
+    grid-area: ul;
+}
+
+#project a{
+    background-color: #444f2c;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 30px;
+    margin: 30px;
+    font-size: 30px;
+}
+
+#project a:hover{
+    background-color: #dee2d5;
+    color: #000000;
+}
+
+/* Apartado de contacto */
+
+#contacto{
+    width: 100%;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#contacto h2{
+    margin: 30%;
+    font-size: 50px;
+    color: #444f2c;
+}
+
+#contacto form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-right: 90px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    text-align: center;
+}
+
+label{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+textarea{
+    resize: vertical;
+}
+
+button{
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #6e7d4e;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+#pie{
+    width: 100%;
+    padding: 15px;
+    height: 80px;
+    margin-top: 30px;
+    background-color: #d0ddb4;
+}
+
+#copy{
+    background-color: #d0ddb4;
+    margin-left: 45%;
+    color: #444f2c;
+}

@@ -13,14 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Vincular css -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
+<body class="cuerpo">
+    <header id="header1">
         <h1 id="encabezado">Yaila Ustate Cujia</h1>
-        <br>
-        <br>
         <nav>
             <ul id="enlace">
                 <!-- Botones de navegación -->
@@ -34,12 +32,12 @@
     </header>
     <main id="principal">
         <!-- Recuadro de información sobre mi -->
-        <section id="sobremi">
-            <h2>Sobre mí</h2><br><br>
+        <article id="sobremi">
+            <h2>Sobre mí</h2>
             <p>Hola! mi nombre es Yaila Ustate, tengo 17 años y actualmente estoy en proceso de formación en desarrollo de software. Estoy aprendiendo a crear páginas web utilizando HTML y CSS, enfocándome en la estructura, el diseño y la organización del contenido.</p>
-        </section>
+        </article>
 
-        <section id="proyectos">
+        <article id="proyectos">
             <h2>Proyectos</h2>
             <ul id="project">
                 <!-- Enlaces a otros proyectos -->
@@ -47,28 +45,28 @@
                 <li><a href="#proyecto2">Proyecto 2</a></li>
                 <li><a href="#proyecto3">Proyecto 3</a></li>
             </ul>
-        </section>
+        </article>
 
-        <section id="contacto">
+        <article id="contacto">
             <h2>Contacto</h2>
             <!-- Formulario de contacto para el usuario -->
             <form action="index.html" method="get">
-                <br><br>
+            
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required><br><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
 
-                <label for="correo">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" required><br><br>
+                <label for="correo">Email</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su email" required>
 
                 <label for="telefono">Telefono</label>
-                <input type="number" id="telefono" name="telefono" required min="1"><br><br>
+                <input type="number" id="telefono" name="telefono" placeholder="Ingrese su telefono" required min="1">
 
-                <label for="comentarios">Comentarios</label>
-                <textarea id="comentarios" name="comentarios"></textarea><br><br>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje..."></textarea>
 
-                <button type="submit">Enviar</button><br><br>
+                <button type="submit">Enviar</button>
             </form>
-        </section>
+        </article>
     </main>
     <a href="">
         
