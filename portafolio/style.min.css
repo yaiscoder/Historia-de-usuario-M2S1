@@ -6,8 +6,6 @@
     --color-header: #ffffff;
 }
 
-/* Pagina principal*/
-
 #cuerpo1{
     margin: 0;
     background-color: var(--color-fondo);
@@ -26,16 +24,12 @@
     top: 0;
 }
 
-/* Titulo con mi nombre */
-
 #encabezado{  
     font-size: 2rem;
     padding: 25px;
     margin: 0;
     color: var(--color-principal);
 }
-
-/* Botones de navegación */
 
 nav ul {
     list-style: none;      
@@ -65,8 +59,6 @@ nav ul {
     gap: 20px;                    
 }
 
-/* Apartado sobre mi */
-
 #sobremi{
     width: 100%;
     margin-top: 5%;
@@ -91,8 +83,6 @@ nav ul {
     text-align: center;
     color: #e7e0e0;
 }
-
-/* Apartados de proyectos */
 
 #proyectos{
     width: 100%;
@@ -135,8 +125,6 @@ nav ul {
     background-color: #dee2d5;
     color: #000000;
 }
-
-/* Apartado de contacto */
 
 #contacto{
     width: 100%;
@@ -188,8 +176,6 @@ button{
     cursor: pointer;
 }
 
-/* Footer */
-
 #pie{
     width: 100%;
     padding: 15px;
@@ -204,8 +190,6 @@ button{
     margin-left: 45%;
     color: var(--color-principal);
 }
-
-/* Pagina mascota */
 
 #cuerpo2{
   margin: 0;
@@ -228,8 +212,6 @@ button{
     margin-left: 10px;
     color: var(--color-principal);
 }
-
-/* Tarjetas/Card de las mascotas */
 
 #tarjeton{
     display: flex;
@@ -269,8 +251,6 @@ button{
 
 }
 
-/* Pie de pagina/ footer */
-
 #pie-pagina{
     width: 100%;
     display: flex;
@@ -290,8 +270,6 @@ button{
     background-color: #fff;
 }
 
-/* Botón de regreso */
-
 #regresar{
     background-color: #6e7d4e;
     color: white;
@@ -305,9 +283,6 @@ button{
     background-color: var(--color-principal);
 }
 
-
-/* Botón para subir */
-
 html {
   scroll-behavior: smooth;
 }
@@ -317,15 +292,12 @@ html {
     bottom: 20px;   
     right: 20px;     
     z-index: 1000;   
-
-    /* Estilo de círculo */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 50px;
     border-radius: 50%; 
-    
     background-color: var(--color-principal); 
     color: var(--color-header);
     text-decoration: none;
@@ -333,54 +305,37 @@ html {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
-/* Media query */
-
-/* Celulares */
-
 @media (max-width: 600px){
-
-    /* Menú en columna */
     nav ul{
         flex-direction: column;
         align-items: center;
     }
-
     #sobremi{
         display: flex;
         flex-wrap: wrap;
     }
-
     /* Proyectos en 1 columna */
     #project{
         grid-template-columns: 1fr;
     }
-
     #proyectos{
         display: flex;
         flex-wrap: wrap;
     }
-
     #contacto{
         display: flex;
         flex-wrap: wrap;
     }
-
-    /* Galeria 2 columnas */
     #tarjeton{
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Tablets */
-
 @media (min-width: 601px) and (max-width: 1024px){
 
-    /* Proyectos en 2 columanas */
     #project{
         grid-template-columns: repeat(2, 1fr);
     }
-
-    /* Galeria 3 columnas */
     #tarjeton{
         grid-template-columns: repeat(3, 1fr);
     }
