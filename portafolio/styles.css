@@ -221,8 +221,6 @@ button {
 /* Tarjetas/Card de las mascotas */
 
 #tarjeton {
-  display: flex;
-  justify-content: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1%;
