@@ -1,128 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
+
+<head>
     <!-- Configurar aceptación de caracteres especiales -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Ajustar pagina a todos los dispositivos -->
     <title>Portafolio personal</title>
-    <link rel="icon" href="imagenes/portafolio.png" type="image/png" />
+    <link rel="icon" href="imagenes/portafolio.png" type="image/png">
     <!-- Fuente importada -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Vincular css -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  <body id="cuerpo1">
+<body id="cuerpo1">
     <header id="header1">
-      <h1 id="encabezado">Yaila Ustate Cujia</h1>
-      <nav>
-        <ul id="enlace">
-          <!-- Botones de navegación -->
-          <li><a href="#sobremi">Sobre mí</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="mascotas.html">Mascotas</a></li>
-        </ul>
-      </nav>
+        <h1 id="encabezado">Yaila Ustate Cujia</h1>
+        <nav>
+            <ul id="enlace">
+                <!-- Botones de navegación -->
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="mascotas.html">Mascotas</a></li>
+            </ul>
+        </nav>
+    
     </header>
     <main class="principal">
-      <!-- Recuadro de información sobre mi -->
-      <article id="sobremi">
-        <h2>Sobre mí</h2>
-        <p>
-          Hola! mi nombre es Yaila Ustate, tengo 17 años y actualmente estoy en
-          proceso de formación en desarrollo de software. Estoy aprendiendo a
-          crear páginas web utilizando HTML y CSS, enfocándome en la estructura,
-          el diseño y la organización del contenido.
-        </p>
-      </article>
+        <!-- Recuadro de información sobre mi -->
+        <article id="sobremi">
+            <h2>Sobre mí</h2>
+            <p>Hola! mi nombre es Yaila Ustate, tengo 17 años y actualmente estoy en proceso de formación en desarrollo de software. 
+                Estoy aprendiendo a crear páginas web utilizando HTML y CSS,
+                enfocándome en la estructura, el diseño y la organización del contenido.</p>
+        </article>
 
-      <article id="proyectos">
-        <h2>Proyectos</h2>
-        <ul id="project">
-          <!-- Enlaces a otros proyectos -->
-          <li>
-            <a
-              href="https://github.com/yaiscoder/inventario-de-productos.git"
-              target="_blank"
-              >Proyecto 1</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/yaiscoder/Sistema-de-Gestion-de-Estudiantes.git"
-              target="_blank"
-              >Proyecto 2</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://github.com/yaiscoder/Historia-de-usuario-M2S1.git"
-              target="_blank"
-              >Proyecto 3</a
-            >
-          </li>
-        </ul>
-      </article>
+        <article id="proyectos">
+            <h2>Proyectos</h2>
+            <ul id="project">
+                <!-- Enlaces a otros proyectos -->
+                <li><a href="https://github.com/yaiscoder/inventario-de-productos.git" target="_blank">Proyecto 1</a></li>
+                <li><a href="https://github.com/yaiscoder/Sistema-de-Gestion-de-Estudiantes.git" target="_blank">Proyecto 2</a></li>
+                <li><a href="https://github.com/yaiscoder/Historia-de-usuario-M2S1.git" target="_blank">Proyecto 3</a></li>
+            </ul>
+        </article>
 
-      <article id="contacto">
-        <h2>Contacto</h2>
-        <!-- Formulario de contacto para el usuario -->
-        <form action="index.html" method="get">
-          <label for="nombre">Nombre</label>
-          <input
-            type="text"
-            id="nombre"
-            name="nombre"
-            placeholder="Ingrese su nombre"
-            required
-          />
+        <article id="contacto">
+            <h2>Contacto</h2>
+            <!-- Formulario de contacto para el usuario -->
+            <form action="index.html" method="get">
+            
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
 
-          <label for="correo">Email</label>
-          <input
-            type="email"
-            id="correo"
-            name="correo"
-            placeholder="Ingrese su email"
-            required
-          />
+                <label for="correo">Email</label>
+                <input type="email" id="correo" name="correo" placeholder="Ingrese su email" required>
 
-          <label for="telefono">Telefono</label>
-          <input
-            type="number"
-            id="telefono"
-            name="telefono"
-            placeholder="Ingrese su telefono"
-            required
-            min="1"
-          />
+                <label for="telefono">Telefono</label>
+                <input type="number" id="telefono" name="telefono" placeholder="Ingrese su telefono" required min="1">
 
-          <label for="mensaje">Mensaje</label>
-          <textarea
-            id="mensaje"
-            name="mensaje"
-            placeholder="Mensaje..."
-          ></textarea>
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje..."></textarea>
 
-          <button type="submit">Enviar</button>
-        </form>
-      </article>
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
     </main>
 
     <!-- Botón para subir -->
     <div>
-      <a class="subir" href="#" class="boton-subir">↑</a>
+        <a class="subir boton-subir" href="#">↑</a>
     </div>
-
+    
     <!-- Derechos de autor -->
     <footer id="pie"><p id="copy">© 2026 Yaila Ustate</p></footer>
 
-    <script src="script.js"></script>
-  </body>
+        <script src="script.js"></script>
+</body>
+
 </html>
