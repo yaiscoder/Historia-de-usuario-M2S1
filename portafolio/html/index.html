@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configure support for special characters -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adjust page for all devices -->
+    <title>Portafolio personal</title>
+    <link rel="icon" href="../imagenes/portafolio.png" type="image/png">
+    <!-- Imported font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id="body1">
+    <header id="header1">
+        <h1 id="myname">Yaila Ustate Cujia</h1>
+        <nav>
+            <ul id="link">
+                <!-- Navigation buttons -->
+                <li><a href="../html/index.html#aboutme">Sobre mí</a></li>
+                <li><a href="../html/index.html#projects">Proyectos</a></li>
+                <li><a href="../html/index.html#contact">Contacto</a></li>
+                <li><a href="mascotas.html">Mascotas</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    <main>
+        <!-- Information box about me -->
+        <article id="aboutme">
+            <h2>Sobre mí</h2>
+            <p>Hola! mi nombre es Yaila Ustate, tengo 17 años y actualmente estoy en proceso de formación en desarrollo de software. 
+                Estoy aprendiendo a crear páginas web utilizando HTML y CSS,
+                enfocándome en la estructura, el diseño y la organización del contenido.
+                <!-- Hidden text -->
+                <span id="extra" style="display: none;">Me gustaría aprender nuevas tecnologías, 
+                    mejorar mis habilidades y crear proyectos web cada vez más completos.</span>
+                <button id="btn-read">Leer más</button>
+            </p>
+            
+        </article>
+
+        <article id="projects">
+            <h2>Proyectos</h2>
+            <ul id="project">
+                <!-- Links to other projects -->
+                <li><a href="https://github.com/yaiscoder/inventario-de-productos.git" target="_blank">Proyecto 1</a></li>
+                <li><a href="https://github.com/yaiscoder/Sistema-de-Gestion-de-Estudiantes.git" target="_blank">Proyecto 2</a></li>
+                <li><a href="https://github.com/yaiscoder/Historia-de-usuario-M2S1.git" target="_blank">Proyecto 3</a></li>
+            </ul>
+            <!-- hide button -->
+            <button id="btn-hidden">Ocultar</button>
+        </article>
+
+        <article id="contact">
+            <h2>Contacto</h2>
+            <!-- Contact form for the user -->
+            <form action="index.html" method="get">
+            
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
+
+                <label for="phone">Telefono</label>
+                <input type="number" id="phone" name="phone" placeholder="Ingrese su telefono" required min="1">
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" placeholder="Mensaje..."></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </main>
+
+    <!-- Scroll to top button -->
+    <div>
+        <a class="up-button" href="#">↑</a>
+    </div>
+    
+    <!-- Copyright -->
+    <footer id="foot"><p id="copy">© 2026 Yaila Ustate</p></footer>
+
+        <script src="../javascript/script.js"></script>
+</body>
+
+</html>

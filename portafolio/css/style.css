@@ -1,41 +1,41 @@
 /* Variables */
 :root {
-  --color-principal: #444f2c;
-  --color-secunadrio: #99a57e;
-  --color-fondo: #d0ddb4;
-  --color-header: #ffffff;
+  --primary-color: #444f2c;
+  --secondary-color: #99a57e;
+  --background-color: #d0ddb4;
+  --header-color: #ffffff;
+  --main-font: "Sour Gummy", sans-serif;
 }
 
-/* Pagina principal*/
+/* Main page */
 
-#cuerpo1 {
+#body1 {
   margin: 0;
-  background-color: var(--color-fondo);
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
-  font-family: "Sour Gummy", sans-serif;
+  font-family: var(--main-font);
 }
 
-#header1 {
+#header1, #header2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-header);
+  background-color: var(--header-color);
   box-shadow: 0px 5px 30px rgb(204, 202, 202);
-  position: sticky;
-  top: 0;
+  
 }
 
-/* Titulo con mi nombre */
+/* Title with my name */
 
-#encabezado {
+#myname {
   font-size: 2rem;
   padding: 25px;
   margin: 0;
-  color: var(--color-principal);
+  color: var(--primary-color);
 }
 
-/* Botones de navegación */
+/* Navigation buttons */
 
 nav ul {
   list-style: none;
@@ -45,71 +45,78 @@ nav ul {
   padding: 0;
 }
 
-#enlace a {
-  background-color: var(--color-principal);
-  color: var(--color-header);
+#link a {
+  background-color: var(--primary-color);
+  color: var(--header-color);
   border-radius: 5px;
   text-decoration: none;
   padding: 10px;
   margin: 10px;
 }
 
-#enlace a:hover {
-  background-color: var(--color-secunadrio);
+#link a:hover {
+  background-color: var(--secondary-color);
 }
 
-.principal {
+.major {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Apartado sobre mi */
+/* About me section */
 
-#sobremi {
+#aboutme {
   width: 100%;
   margin-top: 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-#sobremi h2 {
+#aboutme h2 {
   margin-top: 30%;
   margin-left: 30%;
   font-size: 5rem;
-  color: var(--color-principal);
+  color: var(--primary-color);
 }
 
-#sobremi p {
+#aboutme p {
   margin: 20%;
   padding: 5%;
   font-size: 2rem;
-  background-color: var(--color-principal);
+  background-color: var(--primary-color);
   border-radius: 200px;
   text-align: center;
   color: #e7e0e0;
 }
 
-/* Apartados de proyectos */
+#btn-read{
+  background-color: var(--secondary-color);
+  margin-left: 15%;
+  font-size: 2rem;
+  font-family: var(--main-font);
+}
 
-#proyectos {
+/* Projects section */
+
+#projects {
   width: 100%;
   margin-top: 0;
-  background-color: var(--color-header);
+  background-color: var(--header-color);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "ul titulo";
 }
 
-#proyectos h2 {
+#projects h2 {
   margin: 30%;
   font-size: 5rem;
   grid-area: titulo;
-  color: var(--color-principal);
+  color: var(--primary-color);
 }
 
-#proyectos ul {
+#projects ul {
   list-style: none;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -121,8 +128,8 @@ nav ul {
 }
 
 #project a {
-  background-color: var(--color-principal);
-  color: var(--color-header);
+  background-color: var(--primary-color);
+  color: var(--header-color);
   border-radius: 5px;
   text-decoration: none;
   padding: 30px;
@@ -135,22 +142,30 @@ nav ul {
   color: #000000;
 }
 
-/* Apartado de contacto */
+#btn-hidden {
+    grid-area: titulo;
+    align-self: end;
+    margin-bottom: 20%;
+    width: fit-content;
+    justify-self: center;
+}
 
-#contacto {
+/* Contact section */
+
+#contact {
   width: 100%;
   margin-top: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-#contacto h2 {
+#contact h2 {
   margin: 30%;
   font-size: 5rem;
-  color: var(--color-principal);
+  color: var(--primary-color);
 }
 
-#contacto form {
+#contact form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,7 +196,7 @@ button {
   margin-right: 10%;
   margin-top: 15px;
   padding: 15px;
-  background-color: var(--color-principal);
+  background-color: var(--primary-color);
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 25px;
@@ -190,58 +205,46 @@ button {
 
 /* Footer */
 
-#pie {
+#foot {
   width: 100%;
   padding: 15px;
   height: 80px;
   margin-top: 30px;
-  background-color: var(--color-header);
+  background-color: var(--header-color);
   box-shadow: 0px 5px 30px rgb(148, 145, 145);
 }
 
 #copy {
-  background-color: var(--color-header);
+  background-color: var(--header-color);
   margin-left: 45%;
-  color: var(--color-principal);
+  color: var(--primary-color);
 }
 
-/* Pagina mascota */
+/* Pets page */
 
-#cuerpo2 {
+#body2 {
   margin: 0;
-  background-color: var(--color-fondo);
-  font-family: "Sour Gummy", sans-serif;
-}
-
-#header2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--color-header);
-  box-shadow: 0px 5px 30px rgb(204, 202, 202);
-  position: sticky;
-  top: 0;
+  background-color: var(--background-color);
+  font-family: var(--main-font);
 }
 
 #header2 h1 {
   margin-left: 10px;
-  color: var(--color-principal);
+  color: var(--primary-color);
 }
 
-/* Tarjetas/Card de las mascotas */
+/* Pet cards */
 
-#tarjeton {
-  display: flex;
-  justify-content: center;
+#card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1%;
 }
 
-.card-mascota {
+.card-pet {
   background-color: #f1f3eb;
   width: 70%;
-  border: 2px solid var(--color-principal);
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
   padding: 20px;
   margin-top: 40px;
@@ -250,25 +253,25 @@ button {
   margin-left: 12%;
 }
 
-.img-mascota {
+.img-pet {
   max-width: 100%;
   height: auto;
 }
 
-.card-mascota h2 {
+.card-pet h2 {
   text-align: center;
   font-size: 2rem;
-  color: var(--color-principal);
+  color: var(--primary-color);
 }
 
-.card-mascota:hover {
+.card-pet:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 20px gray;
 }
 
-/* Pie de pagina/ footer */
+/* Footer */
 
-#pie-pagina {
+#foot-page {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -287,9 +290,9 @@ button {
   background-color: #fff;
 }
 
-/* Botón de regreso */
+/* Back button */
 
-#regresar {
+#go-back {
   background-color: #6e7d4e;
   color: white;
   border-radius: 5px;
@@ -298,35 +301,95 @@ button {
   margin-left: 15px;
 }
 
-#regresar:hover {
-  background-color: var(--color-principal);
+#go-back:hover {
+  background-color: var(--primary-color);
 }
 
-/* Botón para subir */
+/* Scroll to top button */
 
 html {
   scroll-behavior: smooth;
 }
 
-.subir {
+.up-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-
-  /* Estilo de círculo */
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-
-  background-color: var(--color-principal);
-  color: var(--color-header);
+  background-color: var(--primary-color);
+  color: var(--header-color);
   text-decoration: none;
   font-size: 1.5rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Media query */
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  #header1,
+  #header2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #link a {
+    display: block;
+    width: 80%;
+    margin: 5px auto;
+  }
+
+  #aboutme, #contact {
+    grid-template-columns: 1fr;
+  }
+
+  #projects{
+    display: block;
+  }
+
+  #project li{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+  }
+
+}
+
+/* Tablets */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #aboutme,
+  #projects,
+  #contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 769px) {
+  #card {
+    display: block;
+  }
+
+  .card-pet {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 840px) {
+  #card {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
