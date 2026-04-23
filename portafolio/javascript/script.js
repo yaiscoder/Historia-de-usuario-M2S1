@@ -27,11 +27,11 @@ const listaProyectos = document.getElementById('project');
 btnHidden.addEventListener('click', function() {
     if (listaProyectos.style.display !== "none") {
         listaProyectos.style.display = "none";
-        btnHidden.textContent = "Mostrar Proyectos";
+        btnHidden.textContent = "Mostrar";
     } 
 
     else {
         listaProyectos.style.display = "grid"; 
-        btnHidden.textContent = "Ocultar Proyectos";
+        btnHidden.textContent = "Ocultar";
     }
 });
